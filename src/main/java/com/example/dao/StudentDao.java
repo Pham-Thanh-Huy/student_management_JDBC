@@ -2,6 +2,7 @@ package com.example.dao;
 
 import java.sql.*;
 import java.sql.Date;
+
 import java.util.*;
 
 import com.example.database.JavaUtil;
@@ -136,7 +137,7 @@ public class StudentDao implements DaoInterface<StudentModel> {
                 String studentName = rs.getString("student_name");
                 int studentAge = rs.getInt("student_age");
                 String studentGender = rs.getString("student_gender");
-                Date studentDate = rs.getDate("student_date");
+              Date studentDate = rs.getDate("student_date");
                 String academicPerformance = rs.getString("academic_performance");
 
                 studentSearch = new StudentModel(id, studentId, studentName, studentAge, studentGender, studentDate,

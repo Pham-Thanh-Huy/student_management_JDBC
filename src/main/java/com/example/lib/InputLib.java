@@ -46,7 +46,15 @@ public class InputLib {
 
     public static boolean isAcademicPerformance(String input) {
         String check = input.toLowerCase();
-        if(check.equals("trung bình") || check.equals("khá")|| check.equals("Giỏi") || check.equals("Xuất sắc")){
+        if(check.equals("trung bình") || check.equals("khá")|| check.equals("giỏi") || check.equals("xuất sắc")){
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean isChoose(String input) {
+        String check = input.toLowerCase();
+        if(check.equals("1") || check.equals("0")){
             return true;
         }
         return false;
